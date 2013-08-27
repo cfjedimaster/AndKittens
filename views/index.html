@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AndKittens.us</title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css">
+	<link rel="stylesheet" href="/public/stylesheets/puregallery.css">
+	<!--
+	<script src="http://use.typekit.net/ajf8ggy.js"></script>
+	<script>
+	    try { Typekit.load(); } catch (e) {}
+	</script>
+	-->
+</head>
+<body>
+
+
+
+
+<div>
+
+    <div class="pure-g-r">
+        <div class="pure-u-1-3 photo-box">
+            <a href="http://www.flickr.com/photos/mink/3646579585/">
+                <img src="http://farm4.staticflickr.com/3548/3646579585_2c74f09f04.jpg"
+                     alt="Melissa and her kitten">
+            </a>
+
+            <aside class="photo-box-caption">
+                Melissa and her kitten
+                <span>
+                    by <a href="http://www.flickr.com/photos/mink/with/3646582025/">Mink</a> / <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+                </span>
+            </aside>
+        </div>
+
+        <div class="pure-u-2-3 text-box">
+            <div class="l-box">
+                <h1 class="text-box-head">And Kittens</h1>
+                <p class="text-box-subhead">Because everything is better with kittens.</p>
+            </div>
+        </div>
+
+        <div class="pure-u-1-3 photo-box">
+                <img src="/public/images/cra.jpg"
+                     alt="The kitten that shall not be named....">
+
+            <aside class="photo-box-caption">
+                The kitten that shall not be named....
+                <span>
+                    by <a href="http://www.raymondcamden.com">RCamden</a> / <a href="http://creativecommons.org/licenses/by-http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+                </span>
+            </aside>
+        </div>
+
+        <div class="pure-u-1-3 photo-box">
+                <img src="/public/images/robin.jpg"
+                     alt="Photo of Robin">
+
+            <aside class="photo-box-caption">
+                Robin
+                <span>
+                    by <a href="http://www.raymondcamden.com">RCamden</a> / <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+                </span>
+            </aside>
+        </div>
+
+        <div class="pure-u-1-3 photo-box">
+            <a href="http://www.flickr.com/photos/bryanalexander/4109326221/">
+                <img src="http://farm3.staticflickr.com/2667/4109326221_2fc10d59fd.jpg"
+                     alt="kitten roar">
+            </a>
+
+            <aside class="photo-box-caption">
+                kitten roar
+                <span>
+                    by <a href="http://www.flickr.com/photos/bryanalexander/with/4109326221/">BryanAlexander</a> / <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+                </span>
+            </aside>
+        </div>
+
+        <div class="pure-u-2-3 photo-box">
+            <a href="http://www.flickr.com/photos/67212136@N00/3822985261/">
+                <img src="/public/images/widekittens.jpg"
+                     alt="Kitten. :)">
+            </a>
+
+            <aside class="photo-box-caption">
+                Kitten. :)
+                <span>
+                    by <a href="http://www.flickr.com/photos/netzanette/">Anette K</a> / <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+                </span>
+            </aside>
+        </div>
+
+        <div class="pure-u-1-3 photo-box">
+            <a href="http://www.flickr.com/photos/fastfocus/542403727//">
+                <img src="http://farm2.staticflickr.com/1238/542403727_9fdc2c6dbf.jpg"
+                     alt="kitten">
+            </a>
+
+            <aside class="photo-box-caption">
+                kitten
+                <span>
+                    by <a href="http://www.flickr.com/photos/fastfocus">Gary Goldberg</a> / <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+                </span>
+            </aside>
+        </div>
+
+        <div class="pure-u-1">
+            <div class="l-box">
+                <h2>Loading Your AndKittens</h2>
+
+                <p>
+                	To use this site, simply load a particular subdomain, for example, <a href="http://pugs.andkittens.us">pugs.andkittens.us</a>. The result will be a collection of photos involves pugs... and kittens. 
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+    	Created by <a href="http://www.raymondcamden.com">Raymond Camden</a> and Tai U. Using <a href="http://purecss.io">Pure CSS</a>.
+    </div>
+</div>
+
+<script src="http://yui.yahooapis.com/3.10.1/build/yui/yui-min.js"></script>
+<script>
+YUI().use('node-base', 'node-event-delegate', function (Y) {
+    // This just makes sure that the href="#" attached to the <a> elements
+    // don't scroll you back up the page.
+    Y.one('body').delegate('click', function (e) {
+        e.preventDefault();
+    }, 'a[href="#"]');
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70863-23', 'andkittens.us');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
