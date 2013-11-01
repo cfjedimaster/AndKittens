@@ -25,7 +25,6 @@
             loader.src = source.url;
 			sourceText.text(source.title);
 			sourceURL.attr("href", source.url);
-        	console.dir(source);
             sources.push(source);
         }
     };
@@ -79,7 +78,7 @@
 	});
 
 	//get my data
-	$.get('/data', function(res,code) {
+	$.get('/data'+window.location.pathname, function(res,code) {
 
 		for(var i=0, len=res.length; i<len; i++) {
 			sources.push(res[i]);	

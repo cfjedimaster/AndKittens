@@ -12,6 +12,14 @@
 	    try { Typekit.load(); } catch (e) {}
 	</script>
 	-->
+    <script>
+    //just for theseus
+    window.addEventListener("DOMContentLoaded", init, false);
+    function init() {
+        console.log("init..."); 
+        //alert('hi');
+    }
+    </script>
 </head>
 <body>
 
@@ -113,7 +121,7 @@
                 <h2>Loading Your AndKittens</h2>
 
                 <p>
-                	To use this site, simply load a particular subdomain, for example, <a href="http://pugs.andkittens.us">pugs.andkittens.us</a>. The result will be a collection of photos involves pugs... and kittens. 
+                	To use this site, simply modify the URL to include a search term, for example, <a href="http://www.andkittens.us/pugs">www.andkittens.us/pugs</a>. The result will be a collection of photos involves pugs... and kittens. 
                 </p>
 
 
@@ -122,7 +130,7 @@
     </div>
 
     <div class="footer">
-    	Created by <a href="http://www.raymondcamden.com">Raymond Camden</a> and Tai U. Using <a href="http://purecss.io">Pure CSS</a>.
+    	Created by <a href="http://www.raymondcamden.com">Raymond Camden</a> and Tai U. Using <a href="http://purecss.io">Pure CSS</a>. Hosting by <a href="http://modulus.io">Modulus</a>
     </div>
 </div>
 

@@ -12,7 +12,13 @@ function getSubdomain(h) {
 var cache = {};
 
 exports.index = function(req, res) {
-	var subdomain = getSubdomain(req.headers.host);
+	var subdomain;
+	if(req.path.length > 1) {
+		subdomain = req.path;
+	} else {
+		subdomain = getSubdomain(req.headers.host);
+	}
+
 	if(subdomain === 'www') {
 		res.render('index');
 	} else {
@@ -21,11 +27,17 @@ exports.index = function(req, res) {
 };
 
 exports.data = function(req, res) {
-	var subdomain = getSubdomain(req.headers.host);
+	/*
+	var subdomain;
+	if(req.path.length > 0) {
+		subdomain = req.path;
+	} else {
+		subdomain = getSubdomain(req.headers.host);
+	}
 
 	if(subdomain === 'www') return;
-
-	var term = subdomain + ' and kittens';
+	*/
+	var term = req.params.term + ' and kittens';
 
 	/*
 	check cache - needs to be more sexy
